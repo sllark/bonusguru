@@ -1,0 +1,11 @@
+@keyframes moveUL {
+  0%{
+    transform: translateX(-30rem);
+  }
+  70%{
+    transform: translateX(3rem);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
