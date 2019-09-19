@@ -1507,7 +1507,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("../../img/webp/headerBG.webp");
+  background-image: url("../img/webp/headerBG.webp");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1778,7 +1778,7 @@ img {
                 margin-left: 1rem; } }
 
 .no-webp .header {
-  background-image: url("../../img/heroBG.jpg"); }
+  background-image: url("../img/heroBG.jpg"); }
 
 .footer {
   display: flex;
