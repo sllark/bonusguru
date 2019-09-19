@@ -1764,7 +1764,8 @@ img {
         @media (max-width: 720px) {
           .header__Content__btns__btnContainer {
             width: 100%;
-            max-width: 38rem; } }
+            max-width: 38rem;
+            height: 8rem; } }
         .header__Content__btns__btnContainer__IconsText {
           display: flex;
           justify-content: center;
