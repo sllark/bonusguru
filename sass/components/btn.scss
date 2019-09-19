@@ -6,7 +6,6 @@
   box-sizing: border-box;
 
   &--primary{
-    background-image: linear-gradient(to top right,$color-sec-dark ,$color-sec-light);
     opacity: 0.9;
 
     &:hover{
@@ -22,7 +21,6 @@
     background-color: white;
     opacity: 0.8;
     padding: 1rem 3rem;
-    color: $color-sec-dark;
     &:hover{
       fill-opacity: 1;
 

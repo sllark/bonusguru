@@ -187,6 +187,7 @@ img{
         &__topBtns{
           //border: 1px solid green;
           width: 75%;
+          height: auto;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -221,8 +222,7 @@ img{
 
           button{
             width: 32%;
-            height: 100%;
-            border: 1px solid #CCCCCC;
+            height: 3.4rem;
             border-radius: 4px;
             font-weight: 500;
             padding: 0.6rem 0;
@@ -234,6 +234,8 @@ img{
               background-color: #F2F2F2;
               font-size: 10px;
               color: rgba(#1A1A1A,0.7);
+              border: 1px solid #CCCCCC;
+
             }
             &:nth-child(2){
               background-color: #E41937;
@@ -245,13 +247,10 @@ img{
               display: flex;
               justify-content:center;
               align-items: center;
-
             }
-
 
             h4{
               margin-left: 0.6rem;
-
             }
           }
         }
@@ -452,6 +451,9 @@ img{
 
       ul{
 
+        .active{
+          color: #FF3E20;
+        }
         li{
           font-size: 1.2rem;
           font-weight: bold;
@@ -505,6 +507,18 @@ img{
       font-weight: bold;
       margin-bottom: 2.4rem;
       line-height: 1.5;
+
+
+
+      @media (max-width: 600px) {
+        font-size: 2.4rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 2rem;
+      }
+
+
 
     }
 

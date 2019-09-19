@@ -8,6 +8,7 @@
   background-image: url("../../img/webp/headerBG.webp");
   background-size: 100% 100%;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 
@@ -60,6 +61,10 @@
     position: relative;
 
 
+
+    .searchIcon:hover,.giftIcon:hover{
+      cursor: pointer;
+    }
     @media (max-width: 720px) {
       width: 100%;
       height: auto;
@@ -150,6 +155,11 @@
               background-color: white;
             }
           }
+
+          &:hover{
+            cursor: pointer;
+          }
+
         }
 
         img{
