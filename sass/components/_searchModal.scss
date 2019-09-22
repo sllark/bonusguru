@@ -75,7 +75,7 @@
 
 
     &__box{
-      border-radius: 8px;
+      border-radius: 6px;
       width: 100%;
       display: flex;
       justify-content: flex-start;
@@ -83,9 +83,14 @@
       height: 15vh;
       background-color: white;
 
+      @media (max-width: 950px) {
+        border-radius: 2px;
+
+      }
 
       @media (max-width: 600px) {
         height: 10vh;
+        border-radius: 0;
       }
       @media (max-width: 450px) {
         height: 9vh;
@@ -97,7 +102,7 @@
         height: 100%;
         background-color: #FF3E23;
         color: #FFFFFF;
-        border-radius: 8px;
+        border-radius: 6px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         font-size: 3rem;
@@ -105,9 +110,15 @@
         &:hover{
           cursor: pointer;
         }
+        @media (max-width: 950px) {
+          font-size: 2.5rem;
+          width: 21%;
+          border-radius: 2px;
 
+        }
         @media (max-width: 600px) {
           width: 25%;
+          border-radius: 0;
         }
         @media (max-width: 450px) {
           padding: 2rem 1rem;
@@ -127,7 +138,7 @@
       input{
         height: 100%;
         padding: 1rem;
-        font-size:4rem;
+        font-size:3.5rem;
         color: $color-gray-900;
         background-color: transparent;
       }

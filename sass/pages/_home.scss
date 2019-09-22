@@ -555,14 +555,7 @@ img{
 
       ul{
 
-        .active{
-          color: #FF3E20;
 
-          img{
-            filter: invert(25%) sepia(19%) saturate(505%) hue-rotate(202deg) brightness(100%) contrast(7%);
-            transform: rotate(-90deg);
-          }
-        }
         li{
 
           a{

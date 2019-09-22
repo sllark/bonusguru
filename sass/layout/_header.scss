@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("../../img/webp/headerBG.webp");
+  background-image: url("../../img/heroBG.jpg");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -407,6 +407,7 @@
 
         &:hover{
           background-color: #E92304;
+          cursor: pointer;
         }
 
         @media (max-width: 840px) {
@@ -558,10 +559,3 @@
 
 
 }
-
-.no-webp .header{
-  background-image: url("../../img/heroBG.jpg");
-}
-
-
-
