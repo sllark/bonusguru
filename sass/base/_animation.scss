@@ -1,9 +1,15 @@
-@keyframes moveUL {
+@keyframes moveNavIn {
   0%{
-    transform: translateX(-30rem);
+    transform: translateX(-200%);
   }
-  70%{
-    transform: translateX(3rem);
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveNavAway {
+  0%{
+    transform: translateX(-200%);
   }
   100%{
     transform: translateX(0);
