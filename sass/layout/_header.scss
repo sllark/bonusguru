@@ -10,7 +10,7 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  overflow: hidden;
+  //overflow: hidden;
 
   @media (max-width: 720px) {
     min-height: 47.2rem;
@@ -18,17 +18,17 @@
     background-size:cover;
 
   }
-  &:after{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    content: '';
-    background-color: #000000;
-    opacity: 0.4;
-    z-index: 0;
+
+  &__bgOverlap{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: #000000;
+      opacity: 0.4;
+      z-index: 0;
   }
   .container{
     z-index: 2;
@@ -85,7 +85,7 @@
         position: absolute;
         top: 0;
         left: -10%;
-        width: 200%;
+        width: 112%;
         height: 100%;
         display: block;
         content: '';
@@ -184,9 +184,69 @@
           font-size: 1.6rem;
           font-weight: bolder;
           line-height: 2;
-
+          position: relative;
           @media (max-width: 920px) {
             font-size: 1.4rem;
+          }
+
+
+          ul{
+            background-color: rgba(#FF3E20,0.88);
+            position: absolute;
+            top: 3.5rem;
+            //border: 1px solid white;
+            color: rgba(white,0.95);
+            font-weight: lighter;
+            font-size: 1.2rem;
+            width: 150%;
+            border-radius: 4px;
+            border-top-left-radius: 0;
+
+            li{
+              width: 100%;
+              height: 100%;
+              padding: 0.7rem 1rem;
+
+              a{
+                padding: 0.9rem 0;
+                width: 100%;
+                height: 100%;
+                display: block;
+              }
+
+              &:not(:last-child){
+                border-bottom: 1px solid rgba(white,0.5);
+              }
+              &:hover{
+                color: rgba(white,1);
+                background-color: rgba(#FF3E20,0.99);
+                cursor: pointer;
+              }
+            }
+
+            &:before{
+              content: '';
+              display: block;
+              width: 10px;
+              height: 10px;
+              background-color: #FFFFFF;
+              position: absolute;
+              top: -9px;
+              left: -0.5px;
+              clip-path: polygon(50% 0,100% 100%,0 100%);
+              background-color: rgba(#FF3E20,0.8);
+            }
+
+
+            li:hover &:before{
+              background-color: rgba(#FF3E20,1);
+            }
+
+          }
+
+          .hide{
+            height: 0;
+            overflow: hidden;
           }
         }
         .active{
@@ -265,7 +325,10 @@
     @media (max-width: 720px) {
       flex-flow: column;
       padding: 4.5rem 0 3rem;
-
+    }
+    @media (max-width: 450px) {
+      justify-content: center;
+      align-items: center;
     }
 
       &__text{
@@ -279,6 +342,11 @@
         @media (max-width: 720px) {
           width: 100%;
           padding: 4.5rem 0;
+        }
+
+
+        @media (max-width: 450px) {
+          max-width: 38rem;
         }
 
       h1{
@@ -335,6 +403,11 @@
         padding: 0 10%;
         border-radius: 6px;
         box-shadow: 0 2.4rem 2.5rem black;
+        position: relative;
+
+        &:hover{
+          background-color: #E92304;
+        }
 
         @media (max-width: 840px) {
           padding: 0 5% 0 3%;
@@ -365,8 +438,119 @@
 
 
         &__downIcon{
+          height: 1.5rem;
+          width: 1rem;
+          img{
 
 
+            &:active{
+              transform: translateY(3px);
+            }
+
+            &:hover{
+              cursor: pointer;
+            }
+          }
+
+
+
+          ul{
+            z-index: 30;
+            background-color: #FFFFFF;
+            position: absolute;
+            bottom:-14.2rem;
+            left: 0;
+            //border: 1px solid white;
+            color: rgba(white,0.95);
+            font-weight: lighter;
+            font-size: 1.2rem;
+            width: 100%;
+            border-radius: 4px;
+            border-top-right-radius: 0;
+            padding: 1rem 0;
+            box-shadow: 0 7px 11px rgba(0, 0, 0, 0.16);
+
+            li{
+              width: 100%;
+              height: 100%;
+              padding: 0.2rem 0 ;
+              color: black;
+              font-weight: 600;
+
+
+              a{
+                padding: 0.9rem 0;
+                width: 100%;
+                height: 100%;
+                display: block;
+                font-size: 1.5rem;
+              }
+
+              &:not(:last-child){
+                border-bottom: 1px solid rgba(black,0.15);
+              }
+              &:hover{
+                color: rgba(white,1);
+                background-color: rgba(#FF3E20,0.99);
+                cursor: pointer;
+              }
+            }
+
+            &:before{
+              content: '';
+              display: block;
+              width: 7px;
+              height: 7px;
+              background-color: #FFFFFF;
+              position: absolute;
+              top: -7px;
+              right: 1px;
+              clip-path: polygon(50% 0,100% 100%,0 100%);
+            }
+
+
+            li:hover &:before{
+              background-color: rgba(#FF3E20,1);
+            }
+
+          }
+
+
+
+
+          .hide{
+            height: 0;
+            overflow: hidden;
+            padding: 0;
+          }
+
+
+        }
+
+        .thirdBtnOptions{
+
+          ul{
+            top:-14.2rem;
+            bottom: unset;
+
+            &:before{
+              bottom: -7px;
+              top: unset;
+              border-top-right-radius: 4px;
+              border-bottom-right-radius: 0;
+              clip-path: polygon(0 0,100% 0,50% 50%);
+            }
+          }
+
+          img{
+
+            &:active{
+              transform: translateY(-5px);
+            }
+          }
+          .rotateUp{
+            transform: rotate(-180deg);
+          }
         }
       }
     }
@@ -378,4 +562,6 @@
 .no-webp .header{
   background-image: url("../../img/heroBG.jpg");
 }
+
+
 

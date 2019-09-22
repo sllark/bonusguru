@@ -14,6 +14,7 @@
 
 <header class="header" id="mainHeader">
 
+  <div class="header__bgOverlap"></div>
   <div class="container">
   
     <div class="header__top">
@@ -22,17 +23,45 @@
           <div class="header__top__all__left__navMenu">
             <div class="menuLine"></div>
           </div>
-          <picture>
+          <a href="#">
+            <picture>
             <source srcset="img/webp/logo.webp" type="image/webp">
             <source srcset="img/logo.png" type="image/png">
             <img src="img/logo.png" alt="Site Logo">
           </picture>
+          </a>
         </div>
         <ul class="header__top__all__middle">
-          <li class="active"><a href="#">FIND OUR BONUS</a></li>
-          <li><a href="#">COMPARE BONUS</a></li>
-          <li><a href="#">CASINO REVIEWS</a></li>
+          <li class="headerFirstLi active">
+            <a href="#">FIND OUR BONUS</a>
+            
+            <ul class="header__top__all__middle__liOptions firstLiOptions hide">
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+          <li class="headerSecLi">
+            <a href="#">COMPARE BONUS</a>
+            <ul class="header__top__all__middle__liOptions secondLiOptions hide">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+            </ul>
+
+
+          </li>
+          <li class="headerThirdLi">
+            <a href="#">CASINO REVIEWS</a>
+            <ul class="header__top__all__middle__liOptions thirdLiOptions hide">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+
         </ul>
+        
         <div class="header__top__all__rightIcons">
           <div class="searchIcon">
             <picture>
@@ -67,6 +96,8 @@
         </p>
       </div>
       <div class="header__Content__btns">
+        
+        
         <div class="header__Content__btns__btnContainer">
           <div class="header__Content__btns__btnContainer__IconsText">
             <picture>
@@ -76,14 +107,23 @@
             </picture>
             <h3>Welcome Bonus</h3>
           </div>
-          <div class="header__Content__btns__btnContainer__downIcon">
+          <div class="header__Content__btns__btnContainer__downIcon firstBtnOptions">
             <picture>
               <source srcset="img/webp/downIcon.webp" type="image/webp">
               <source srcset="img/downIcon.png" type="image/png">
               <img src="img/downIcon.png" alt="Down Icon">
             </picture>
+  
+            <ul class="header__Content__btns__btnContainer__downIcon__liOptions  hide">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+            </ul>
+
           </div>
         </div>
+        
+        
         <div class="header__Content__btns__btnContainer">
           <div class="header__Content__btns__btnContainer__IconsText">
             <picture>
@@ -93,16 +133,24 @@
             </picture>
             <h3>No Deposit Bonus</h3>
           </div>
-          <div class="header__Content__btns__btnContainer__downIcon">
+          <div class="header__Content__btns__btnContainer__downIcon secondBtnOptions">
             <picture>
               <source srcset="img/webp/downIcon.webp" type="image/webp">
               <source srcset="img/downIcon.png" type="image/png">
               <img src="img/downIcon.png" alt="Down Icon">
             </picture>
+  
+            <ul class="header__Content__btns__btnContainer__downIcon__liOptions  hide">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+            </ul>
+
           </div>
         </div>
+        
         <div class="header__Content__btns__btnContainer">
-          <div class="header__Content__btns__btnContainer__IconsText">
+          <div class="header__Content__btns__btnContainer__IconsText ">
             <picture>
               <source srcset="img/webp/diamond.webp" type="image/webp">
               <source srcset="img/diamond.png" type="image/png">
@@ -110,12 +158,19 @@
             </picture>
             <h3>Exclusive Bonus</h3>
           </div>
-          <div class="header__Content__btns__btnContainer__downIcon">
+          <div class="header__Content__btns__btnContainer__downIcon thirdBtnOptions">
             <picture>
               <source srcset="img/webp/downIcon.webp" type="image/webp">
               <source srcset="img/downIcon.png" type="image/png">
               <img src="img/downIcon.png" alt="Down Icon">
             </picture>
+  
+            <ul class="header__Content__btns__btnContainer__downIcon__liOptions  hide">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+            </ul>
+
           </div>
         </div>
       
@@ -126,7 +181,48 @@
     
   </div>
 </header>
+<nav class="nav moveNavAway">
+  
+  <div class="nav__close">
+  
+  </div>
 
+  <div class="nav__container">
+  
+    <h2>Find Your Bonus</h2>
+    <ul>
+      <li>
+        <a href="#">Option 1</a>
+      </li>
+      <li>
+        <a href="#">Option 2</a>
+      </li>
+    </ul>
+  
+    <hr>
+    <h2>Compare Bonus</h2>
+    <ul>
+      <li>
+        <a href="#">Option 1</a>
+      </li>
+      <li>
+        <a href="#">Option 2</a>
+      </li>
+    </ul>
+    <hr>
+    <h2>Casino Review</h2>
+    <ul>
+      <li>
+        <a href="#">Option 1</a>
+      </li>
+      <li>
+        <a href="#">Option 2</a>
+      </li>
+    </ul>
+    <hr>
+
+  </div>
+</nav>
 <main>
 
   <section class="sectionMain">
@@ -185,30 +281,30 @@
               </picture>
               <!--One Rating Star End-->
             </div>
-            <h3 class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</h3>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</a>
           </div>
     
           <div class="sectionMain__contentList__item__contentRight">
-            <h2>Casumo:40 Free Spins No Deposit</h2>
+            <h3>Casumo:40 Free Spins No Deposit</h3>
             <div class="sectionMain__contentList__item__contentRight__topBtns">
-              <button class="playerTypeBtn">
+              <a href="#" class="playerTypeBtn">
                 <picture>
                   <source srcset="img/webp/united-kingdom-flag-.webp" type="image/webp">
                   <source srcset="img/united-kingdom-flag-.png" type="image/png">
                   <img src="img/united-kingdom-flag-.png" alt="united kingdom flag">
                 </picture>
                 <h4>Player Accepted</h4>
-              </button>
-              <button class="bonusTypeBtn">
+              </a>
+              <a href="#" class="bonusTypeBtn">
                 Welcome Bonus
-              </button>
-              <button class="validTimeBtn">
+              </a>
+              <a href="#" class="validTimeBtn">
                 VALID: 2019-08-23
-              </button>
+              </a>
             </div>
       
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet asperiores at autem corporis doloremque, dolores doloribus et eveniet labore necessitatibus, nesciunt odio perspiciatis quibusdam ratione repellendus voluptatem? Assumenda, nisi?
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
       
             <div class="sectionMain__contentList__item__contentRight__bottomBtns">
@@ -217,13 +313,21 @@
               </button>
         
               <div class="sectionMainItemBtn itemBtnTwo">
-                <h3>No Deposit Bonus</h3>
+                <h4>MRSPIN CASINO BONUSES</h4>
                 <div class="itemBtnTwo__downIcon">
                   <picture>
                     <source srcset="img/webp/downIcon.webp" type="image/webp">
                     <source srcset="img/downIcon.png" type="image/png">
                     <img src="img/downIcon.png" alt="Down Icon">
                   </picture>
+  
+  
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+
                 </div>
               </div>
       
@@ -281,45 +385,53 @@
               </picture>
               <!--One Rating Star End-->
             </div>
-            <h3 class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</h3>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</a>
           </div>
     
           <div class="sectionMain__contentList__item__contentRight">
-            <h2>Casumo:40 Free Spins No Deposit</h2>
+            <h3>Casumo:40 Free Spins No Deposit</h3>
             <div class="sectionMain__contentList__item__contentRight__topBtns">
-              <button class="playerTypeBtn">
+              <a href="#" class="playerTypeBtn">
                 <picture>
                   <source srcset="img/webp/Flag_of_Canada.webp" type="image/webp">
                   <source srcset="img/Flag_of_Canada.png" type="image/png">
                   <img src="img/Flag_of_Canada.png" alt="united kingdom flag">
                 </picture>
                 <h4>Player Accepted</h4>
-              </button>
-              <button class="bonusTypeBtn" style="background-color: #DCB70E">
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #DCB70E">
                 EXCLUSIVE BONUS
-              </button>
-              <button class="validTimeBtn">
+              </a>
+              <a href="#" class="validTimeBtn">
                 VALID: 2019-08-23
-              </button>
+              </a>
             </div>
       
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet asperiores at autem corporis doloremque, dolores doloribus et eveniet labore necessitatibus, nesciunt odio perspiciatis quibusdam ratione repellendus voluptatem? Assumenda, nisi?
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
       
             <div class="sectionMain__contentList__item__contentRight__bottomBtns">
               <button class="sectionMainItemBtn itemBtnOne">
                 CLAIM BONUS
               </button>
-        
+  
               <div class="sectionMainItemBtn itemBtnTwo">
-                <h3>No Deposit Bonus</h3>
+                <h4>MRSPIN CASINO BONUSES</h4>
                 <div class="itemBtnTwo__downIcon">
                   <picture>
                     <source srcset="img/webp/downIcon.webp" type="image/webp">
                     <source srcset="img/downIcon.png" type="image/png">
                     <img src="img/downIcon.png" alt="Down Icon">
                   </picture>
+      
+      
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+    
                 </div>
               </div>
       
@@ -379,30 +491,30 @@
               </picture>
               <!--One Rating Star End-->
             </div>
-            <h3 class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</h3>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</a>
           </div>
     
           <div class="sectionMain__contentList__item__contentRight">
-            <h2>Casumo:40 Free Spins No Deposit</h2>
+            <h3>Casumo:40 Free Spins No Deposit</h3>
             <div class="sectionMain__contentList__item__contentRight__topBtns">
-              <button class="playerTypeBtn">
+              <a href="#"class="playerTypeBtn">
                 <picture>
                   <source srcset="img/webp/Flag_of_Germany.webp" type="image/webp">
                   <source srcset="img/Flag_of_Germany.png" type="image/png">
                   <img src="img/Flag_of_Germany.png" alt="united kingdom flag">
                 </picture>
                 <h4>Player Accepted</h4>
-              </button>
-              <button class="bonusTypeBtn" style="background-color: #51139D">
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #51139D">
                 CASHBACK BONUS
-              </button>
-              <button class="validTimeBtn">
+              </a>
+              <a href="#" class="validTimeBtn">
                 VALID: 2019-08-23
-              </button>
+              </a>
             </div>
       
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet asperiores at autem corporis doloremque, dolores doloribus et eveniet labore necessitatibus, nesciunt odio perspiciatis quibusdam ratione repellendus voluptatem? Assumenda, nisi?
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
       
             <div class="sectionMain__contentList__item__contentRight__bottomBtns">
@@ -411,13 +523,21 @@
               </button>
         
               <div class="sectionMainItemBtn itemBtnTwo">
-                <h3>No Deposit Bonus</h3>
+                <h4>MRSPIN CASINO BONUSES</h4>
                 <div class="itemBtnTwo__downIcon">
                   <picture>
                     <source srcset="img/webp/downIcon.webp" type="image/webp">
                     <source srcset="img/downIcon.png" type="image/png">
                     <img src="img/downIcon.png" alt="Down Icon">
                   </picture>
+    
+    
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+  
                 </div>
               </div>
       
@@ -475,30 +595,30 @@
               </picture>
               <!--One Rating Star End-->
             </div>
-            <h3 class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</h3>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</a>
           </div>
     
           <div class="sectionMain__contentList__item__contentRight">
-            <h2>Casumo:40 Free Spins No Deposit</h2>
+            <h3>Casumo:40 Free Spins No Deposit</h3>
             <div class="sectionMain__contentList__item__contentRight__topBtns">
-              <button class="playerTypeBtn">
+              <a href="#" class="playerTypeBtn">
                 <picture>
                   <source srcset="img/webp/spainFlag.webp" type="image/webp">
                   <source srcset="img/spainFlag.png" type="image/png">
                   <img src="img/spainFlag.png" alt="united kingdom flag">
                 </picture>
                 <h4>Player Accepted</h4>
-              </button>
-              <button class="bonusTypeBtn" style="background-color: #0092E5">
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #0092E5">
                 NO DEPOSIT BONUS
-              </button>
-              <button class="validTimeBtn">
+              </a>
+              <a href="#" class="validTimeBtn">
                 VALID: 2019-08-23
-              </button>
+              </a>
             </div>
       
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet asperiores at autem corporis doloremque, dolores doloribus et eveniet labore necessitatibus, nesciunt odio perspiciatis quibusdam ratione repellendus voluptatem? Assumenda, nisi?
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
       
             <div class="sectionMain__contentList__item__contentRight__bottomBtns">
@@ -507,13 +627,21 @@
               </button>
         
               <div class="sectionMainItemBtn itemBtnTwo">
-                <h3>No Deposit Bonus</h3>
+                <h4>MRSPIN CASINO BONUSES</h4>
                 <div class="itemBtnTwo__downIcon">
                   <picture>
                     <source srcset="img/webp/downIcon.webp" type="image/webp">
                     <source srcset="img/downIcon.png" type="image/png">
                     <img src="img/downIcon.png" alt="Down Icon">
                   </picture>
+    
+    
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+  
                 </div>
               </div>
       
@@ -571,30 +699,30 @@
               </picture>
               <!--One Rating Star End-->
             </div>
-            <h3 class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</h3>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</a>
           </div>
     
           <div class="sectionMain__contentList__item__contentRight">
-            <h2>Casumo:40 Free Spins No Deposit</h2>
+            <h3>Casumo:40 Free Spins No Deposit</h3>
             <div class="sectionMain__contentList__item__contentRight__topBtns">
-              <button class="playerTypeBtn">
+              <a href="#" class="playerTypeBtn">
                 <picture>
                   <source srcset="img/webp/Flag_of_New_Zealand.svg.webp" type="image/webp">
                   <source srcset="img/Flag_of_New_Zealand.svg.png" type="image/png">
                   <img src="img/Flag_of_New_Zealand.svg.png" alt="united kingdom flag">
                 </picture>
                 <h4>Player Accepted</h4>
-              </button>
-              <button class="bonusTypeBtn" style="background-color: #0A0A51">
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #0A0A51">
                 RELOAD BONUS
-              </button>
-              <button class="validTimeBtn">
+              </a>
+              <a href="#" class="validTimeBtn">
                 VALID: 2019-08-23
-              </button>
+              </a>
             </div>
       
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet asperiores at autem corporis doloremque, dolores doloribus et eveniet labore necessitatibus, nesciunt odio perspiciatis quibusdam ratione repellendus voluptatem? Assumenda, nisi?
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
       
             <div class="sectionMain__contentList__item__contentRight__bottomBtns">
@@ -603,13 +731,21 @@
               </button>
         
               <div class="sectionMainItemBtn itemBtnTwo">
-                <h3>No Deposit Bonus</h3>
+                <h4>MRSPIN CASINO BONUSES</h4>
                 <div class="itemBtnTwo__downIcon">
                   <picture>
                     <source srcset="img/webp/downIcon.webp" type="image/webp">
                     <source srcset="img/downIcon.png" type="image/png">
                     <img src="img/downIcon.png" alt="Down Icon">
                   </picture>
+    
+    
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+  
                 </div>
               </div>
       
@@ -668,30 +804,30 @@
               </picture>
               <!--One Rating Star End-->
             </div>
-            <h3 class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</h3>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</a>
           </div>
     
           <div class="sectionMain__contentList__item__contentRight">
-            <h2>Casumo:40 Free Spins No Deposit</h2>
+            <h3>Casumo:40 Free Spins No Deposit</h3>
             <div class="sectionMain__contentList__item__contentRight__topBtns">
-              <button class="playerTypeBtn">
+              <a href="#" class="playerTypeBtn">
                 <picture>
                   <source srcset="img/webp/poland-flag.webp" type="image/webp">
                   <source srcset="img/poland-flag.png" type="image/png">
                   <img src="img/poland-flag.png" alt="united kingdom flag">
                 </picture>
                 <h4>Player Accepted</h4>
-              </button>
-              <button class="bonusTypeBtn" style="background-color: #FFBC2A">
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #FFBC2A">
                 FREE SPINS
-              </button>
-              <button class="validTimeBtn">
+              </a>
+              <a href="#" class="validTimeBtn">
                 VALID: 2019-08-23
-              </button>
+              </a>
             </div>
       
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet asperiores at autem corporis doloremque, dolores doloribus et eveniet labore necessitatibus, nesciunt odio perspiciatis quibusdam ratione repellendus voluptatem? Assumenda, nisi?
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
       
             <div class="sectionMain__contentList__item__contentRight__bottomBtns">
@@ -700,13 +836,21 @@
               </button>
         
               <div class="sectionMainItemBtn itemBtnTwo">
-                <h3>No Deposit Bonus</h3>
+                <h4>MRSPIN CASINO BONUSES</h4>
                 <div class="itemBtnTwo__downIcon">
                   <picture>
                     <source srcset="img/webp/downIcon.webp" type="image/webp">
                     <source srcset="img/downIcon.png" type="image/png">
                     <img src="img/downIcon.png" alt="Down Icon">
                   </picture>
+    
+    
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+  
                 </div>
               </div>
       
@@ -766,30 +910,30 @@
               </picture>
               <!--One Rating Star End-->
             </div>
-            <h3 class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</h3>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</a>
           </div>
     
           <div class="sectionMain__contentList__item__contentRight">
-            <h2>Casumo:40 Free Spins No Deposit</h2>
+            <h3>Casumo:40 Free Spins No Deposit</h3>
             <div class="sectionMain__contentList__item__contentRight__topBtns">
-              <button class="playerTypeBtn">
+              <a href="#" class="playerTypeBtn">
                 <picture>
                   <source srcset="img/webp/Flag_of_Mexico.svg.webp" type="image/webp">
                   <source srcset="img/Flag_of_Mexico.svg.png" type="image/png">
                   <img src="img/Flag_of_Mexico.svg.png" alt="united kingdom flag">
                 </picture>
                 <h4>Player Accepted</h4>
-              </button>
-              <button class="bonusTypeBtn" style="background-color: #4D66A6">
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #4D66A6">
                 EXCLUSIVE BONUS
-              </button>
-              <button class="validTimeBtn">
+              </a>
+              <a href="#" class="validTimeBtn">
                 VALID: 2019-08-23
-              </button>
+              </a>
             </div>
       
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet asperiores at autem corporis doloremque, dolores doloribus et eveniet labore necessitatibus, nesciunt odio perspiciatis quibusdam ratione repellendus voluptatem? Assumenda, nisi?
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
       
             <div class="sectionMain__contentList__item__contentRight__bottomBtns">
@@ -798,20 +942,27 @@
               </button>
         
               <div class="sectionMainItemBtn itemBtnTwo">
-                <h3>No Deposit Bonus</h3>
+                <h4>MRSPIN CASINO BONUSES</h4>
                 <div class="itemBtnTwo__downIcon">
                   <picture>
                     <source srcset="img/webp/downIcon.webp" type="image/webp">
                     <source srcset="img/downIcon.png" type="image/png">
                     <img src="img/downIcon.png" alt="Down Icon">
                   </picture>
+    
+    
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+  
                 </div>
               </div>
       
             </div>
           </div>
         </div>
-  
   
         <div class="sectionMain__contentList__item">
           <div class="sectionMain__contentList__item__aboutLeft">
@@ -863,30 +1014,30 @@
               </picture>
               <!--One Rating Star End-->
             </div>
-            <h3 class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</h3>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">Casumo  Bonuses</a>
           </div>
     
           <div class="sectionMain__contentList__item__contentRight">
-            <h2>Casumo:40 Free Spins No Deposit</h2>
+            <h3>Casumo:40 Free Spins No Deposit</h3>
             <div class="sectionMain__contentList__item__contentRight__topBtns">
-              <button class="playerTypeBtn">
+              <a href="#" class="playerTypeBtn">
                 <picture>
                   <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
                   <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
                   <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
                 </picture>
                 <h4>Player Accepted</h4>
-              </button>
-              <button class="bonusTypeBtn" style="background-color: #03B46D">
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
                 RECOMMENDED BONUS
-              </button>
-              <button class="validTimeBtn">
+              </a>
+              <a href="#" class="validTimeBtn">
                 VALID: 2019-08-23
-              </button>
+              </a>
             </div>
       
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet asperiores at autem corporis doloremque, dolores doloribus et eveniet labore necessitatibus, nesciunt odio perspiciatis quibusdam ratione repellendus voluptatem? Assumenda, nisi?
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
       
             <div class="sectionMain__contentList__item__contentRight__bottomBtns">
@@ -895,20 +1046,2008 @@
               </button>
         
               <div class="sectionMainItemBtn itemBtnTwo">
-                <h3>No Deposit Bonus</h3>
+                <h4>MRSPIN CASINO BONUSES</h4>
                 <div class="itemBtnTwo__downIcon">
                   <picture>
                     <source srcset="img/webp/downIcon.webp" type="image/webp">
                     <source srcset="img/downIcon.png" type="image/png">
                     <img src="img/downIcon.png" alt="Down Icon">
                   </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
                 </div>
               </div>
       
             </div>
           </div>
         </div>
+
         
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/PlatinumPlay.webp" type="image/webp">
+              <source srcset="img/PlatinumPlay.png" type="image/png">
+              <img src="img/PlatinumPlay.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+<!--Start changing from here-->
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/uniquecasino-.webp" type="image/webp">
+              <source srcset="img/uniquecasino-.png" type="image/png">
+              <img src="img/uniquecasino-.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/SpinhillCasino.webp" type="image/webp">
+              <source srcset="img/SpinhillCasino.png" type="image/png">
+              <img src="img/SpinhillCasino.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/slottyVegas.webp" type="image/webp">
+              <source srcset="img/slottyVegas.png" type="image/png">
+              <img src="img/slottyVegas.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/spliteaces.webp" type="image/webp">
+              <source srcset="img/spliteaces.png" type="image/png">
+              <img src="img/spliteaces.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/mrspin.webp" type="image/webp">
+              <source srcset="img/mrspin.png" type="image/png">
+              <img src="img/mrspin.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/wunderino-casino.webp" type="image/webp">
+              <source srcset="img/wunderino-casino.png" type="image/png">
+              <img src="img/wunderino-casino.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/dunder.webp" type="image/webp">
+              <source srcset="img/dunder.png" type="image/png">
+              <img src="img/dunder.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/mrspin.webp" type="image/webp">
+              <source srcset="img/mrspin.png" type="image/png">
+              <img src="img/mrspin.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/Pocket-Wins-casino-Logo.webp" type="image/webp">
+              <source srcset="img/Pocket-Wins-casino-Logo.png" type="image/png">
+              <img src="img/Pocket-Wins-casino-Logo.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/drslot.webp" type="image/webp">
+              <source srcset="img/drslot.png" type="image/png">
+              <img src="img/drslot.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/cashmo.webp" type="image/webp">
+              <source srcset="img/cashmo.png" type="image/png">
+              <img src="img/cashmo.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/betway.webp" type="image/webp">
+              <source srcset="img/betway.png" type="image/png">
+              <img src="img/betway.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/pllayojo.webp" type="image/webp">
+              <source srcset="img/pllayojo.png" type="image/png">
+              <img src="img/pllayojo.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/21casino.webp" type="image/webp">
+              <source srcset="img/21casino.png" type="image/png">
+              <img src="img/21casino.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/bovegas.webp" type="image/webp">
+              <source srcset="img/bovegas.png" type="image/png">
+              <img src="img/bovegas.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/europacasino.webp" type="image/webp">
+              <source srcset="img/europacasino.png" type="image/png">
+              <img src="img/europacasino.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/jackpotcity.webp" type="image/webp">
+              <source srcset="img/jackpotcity.png" type="image/png">
+              <img src="img/jackpotcity.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+        <div class="sectionMain__contentList__item">
+          <div class="sectionMain__contentList__item__aboutLeft">
+            <picture>
+              <source srcset="img/webp/pincasino.webp" type="image/webp">
+              <source srcset="img/pincasino.png" type="image/png">
+              <img src="img/pincasino.png" alt="Platinum Play Icon">
+            </picture>
+      
+            <div class="sectionMain__contentList__item__aboutLeft__ratingStars">
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/startFill.webp" type="image/webp">
+                <source srcset="img/startFill.png" type="image/png">
+                <img src="img/startFill.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+        
+              <!--One Rating Star Start-->
+              <picture>
+                <source srcset="img/webp/starEmpty.webp" type="image/webp">
+                <source srcset="img/starEmpty.png" type="image/png">
+                <img src="img/starEmpty.png" alt="Rating Star">
+              </picture>
+              <!--One Rating Star End-->
+            </div>
+            <a href="#" class="sectionMain__contentList__item__aboutLeft__name">LeoVegas</a>
+          </div>
+    
+          <div class="sectionMain__contentList__item__contentRight">
+            <h3>Casumo:40 Free Spins No Deposit</h3>
+            <div class="sectionMain__contentList__item__contentRight__topBtns">
+              <a href="#" class="playerTypeBtn">
+                <picture>
+                  <source srcset="img/webp/Flag_of_Brazil.svg.webp" type="image/webp">
+                  <source srcset="img/Flag_of_Brazil.svg.png" type="image/png">
+                  <img src="img/Flag_of_Brazil.svg.png" alt="united kingdom flag">
+                </picture>
+                <h4>Player Accepted</h4>
+              </a>
+              <a href="#" class="bonusTypeBtn" style="background-color: #03B46D">
+                RECOMMENDED BONUS
+              </a>
+              <a href="#" class="validTimeBtn">
+                VALID: 2019-08-23
+              </a>
+            </div>
+      
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      
+            <div class="sectionMain__contentList__item__contentRight__bottomBtns">
+              <button class="sectionMainItemBtn itemBtnOne">
+                CLAIM BONUS
+              </button>
+        
+              <div class="sectionMainItemBtn itemBtnTwo">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="itemBtnTwo__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+            
+            
+                  <ul class="itemBtnTwo__downIcon__liOptions  hide">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                  </ul>
+          
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  
+  
+  
         <div class="sectionMain__contentList__changeBtns">
           <button class="changeBtn__prev">
             PREV
@@ -931,341 +3070,403 @@
       <div class="sectionMain__sideWidget">
   
         <div class="sectionMain__sideWidget__widget widgetOne">
-          <h1>Find Your Bonus</h1>
+          <h2>Find Your Bonus</h2>
     
           <ul>
             <li>
-              <h3 class="active">Welcome Bonus</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#" class="active">
+                <h3 >Welcome Bonus</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>Exclusive  Bonus</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Exclusive  Bonus</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>Reload  Bonus</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Reload  Bonus</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>Dedicated  Bonus</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Dedicated  Bonus</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>Cashback  Bonus</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Cashback  Bonus</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>No Deposit Bonus</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h4>MRSPIN CASINO BONUSES</h4>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>Free Money Bonus</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Free Money Bonus</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
   
         <div class="sectionMain__sideWidget__widget widgetTwo">
-          <h1>Free Spins No Deposit</h1>
+          <h2>Free Spins No Deposit</h2>
     
           <ul>
             <li>
-              <h3>10 Free Spins No Deposit</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>10 Free Spins No Deposit</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>20 Free Spins No Deposit</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>20 Free Spins No Deposit</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>30 Free Spins No Deposit</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>30 Free Spins No Deposit</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>40 Free Spins No Deposit</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>40 Free Spins No Deposit</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>50 Free Spins No Deposit</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>50 Free Spins No Deposit</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>60 Free Spins No Deposit</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>60 Free Spins No Deposit</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>100 Free Spins No Deposit</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>100 Free Spins No Deposit</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
   
         <div class="sectionMain__sideWidget__widget widgetThree">
-          <h1>Bonus Codesby Casino</h1>
+          <h2>Bonus Codesby Casino</h2>
     
           <ul>
             <li>
-              <h3>888 Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>888 Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>Betvictor Casino
-              </h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Betvictor Casino
+                </h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>Betway Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Betway Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>Cashmo Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Cashmo Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>Casumo Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Casumo Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>Dunder Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Dunder Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             <li>
-              <h3>Dunder Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
-            </li>
-  
-            <li>
-              <h3>Grosvenor Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
-            </li>
-  
-            <li>
-              <h3>Mr Green Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Dunder Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
   
             <li>
-              <h3>Mr Spin Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Grosvenor Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
   
             <li>
-              <h3>MrPlay Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
-            </li>
-            <li>
-              <h3>Unibet Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
-            </li>
-            <li>
-              <h3>William Hill</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Mr Green Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
   
             <li>
-              <h3>Wink Slots Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Mr Spin Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
   
             <li>
-              <h3>Hello Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>MrPlay Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h3>Unibet Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h3>William Hill</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
   
             <li>
-              <h3>Ladbrokes Paddy Power</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Wink Slots Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
   
             <li>
-              <h3>PlayOJO Casino</h3>
-              <div class="sectionMain__sideWidget__widgetOne__downIcon">
-                <picture>
-                  <source srcset="img/webp/downIcon.webp" type="image/webp">
-                  <source srcset="img/downIcon.png" type="image/png">
-                  <img src="img/downIcon.png" alt="Down Icon">
-                </picture>
-              </div>
+              <a href="#">
+                <h3>Hello Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#">
+                <h3>Ladbrokes Paddy Power</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#">
+                <h3>PlayOJO Casino</h3>
+                <div class="sectionMain__sideWidget__widgetOne__downIcon">
+                  <picture>
+                    <source srcset="img/webp/downIcon.webp" type="image/webp">
+                    <source srcset="img/downIcon.png" type="image/png">
+                    <img src="img/downIcon.png" alt="Down Icon">
+                  </picture>
+                </div>
+              </a>
             </li>
             
           </ul>
@@ -1575,18 +3776,31 @@
     
     <form action="#" class="searchModal__content__box">
       
-      <button>
-  
-        <picture>
-          <source srcset="img/webp/search.webp" type="image/webp">
-          <source srcset="img/search.png" type="image/png">
-          <img src="img/search.png" alt="daimond bonus Icon">
-        </picture>
-      </button>
-      
-      
       <input type="search" placeholder="Search...">
+      
+      <input type="submit" value="Search">
+    </form>
+  </div>
+
+
+
+</div>
+
+<div class="searchModal closeModal subscribeModal">
+  
+  <div class="searchModal__content">
     
+    <div class="searchModal__content__close subscribeModalCloseBtn">
+      <div class="searchModal__content__close__btn"></div>
+    
+    </div>
+    
+    
+    <form action="#" class="searchModal__content__box">
+      
+      <input type="text" placeholder="Your Favourite Email">
+      
+      <input type="submit" value="Subscribe">
     </form>
   </div>
 
