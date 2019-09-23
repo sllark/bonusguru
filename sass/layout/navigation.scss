@@ -4,7 +4,7 @@
   left: 0;
   width: 30rem;
   height: 100vh;
-  background-color: #FF3E20;
+  background-color: #ffffff;
   z-index: 1000;
   overflow: hidden;
   transition: transform 0.3s;
@@ -28,7 +28,7 @@
       display: block;
       height: 3rem;
       width: 2px;
-      background-color: white;
+      background-color: black;
       transform: rotate(45deg);
     }
     &:after{
@@ -36,8 +36,19 @@
       display: block;
       height: 3rem;
       width: 2px;
-      background-color: white;
+      background-color: black;
       transform:rotate(-45deg) translate(-2px, -1.5px);
+    }
+
+    &:hover{
+
+      &:before{
+        background-color: red;
+      }
+      &:after{
+        background-color: red;
+      }
+
     }
 
 
@@ -53,18 +64,28 @@
       font-size: 2.5rem;
       font-weight: bold;
       padding: 1.3rem 2rem;
-      color: white;
       text-align: left;
       margin-top: 1rem;
+      color: rgba(#1A1A1A,0.9);
 
+
+      @media (max-width: 600px) {
+        padding: 1rem;
+      }
 
     }
     ul{
       margin-left: 5rem;
-      color: white;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.5rem;
       width: 100%;
       height: auto;
+      color: rgba(#1A1A1A,0.85);
+
+
+      @media (max-width: 600px) {
+        margin-left: 0;
+      }
+
       li{
         font-size: 2rem;
         font-weight: bold;
@@ -72,6 +93,10 @@
         width: 100%;
         height: 3rem;
         margin: 1rem 0;
+        @media (max-width: 600px) {
+          padding-left: 1.5rem;
+          margin-left: 1rem;
+        }
 
         a{
           height: 100%;
@@ -80,17 +105,17 @@
 
           &:hover{
             cursor: pointer;
+            color:  #FF3E20;
           }
         }
 
         &:not(:last-child){
-          border-bottom: 1px solid rgba(white,0.15);
-        }
+          border-bottom: 1px solid rgba(0, 0, 0, 0.15);        }
       }
     }
 
     hr{
-      border-top: 1px solid rgba(white,0.3);
+      border-top: 1px solid rgba(black,0.3);
     }
   }
 }

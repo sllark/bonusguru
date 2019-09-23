@@ -50,6 +50,21 @@ subscribeModalCloseBtn.addEventListener('click',()=>{
     subscribeModal.classList.add('closeModal');
 });
 
+let giftModal=document.querySelector('.giftModal'),
+    giftModalBtn = document.querySelector('.giftIcon'),
+    giftModalCloseBtn = document.querySelector('.giftModalCloseBtn');
+
+giftModalBtn.addEventListener('click',()=>{
+    giftModal.classList.remove('closeModal');
+});
+
+
+giftModalCloseBtn.addEventListener('click',()=>{
+    giftModal.classList.add('closeModal');
+});
+
+
+
 
 
 

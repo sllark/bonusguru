@@ -89,6 +89,10 @@
           opacity: 0.55;
           margin: 1rem 0 1.5rem;
 
+
+            &:hover{
+              opacity: 1;
+            }
         }
       }
 
@@ -107,10 +111,12 @@
 
   }
 
-  hr{
+  span{
+    display: block;
+    height: 0.5px;
     width: 100%;
     opacity: 0.16;
-    border-top: 1px solid rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
   }
 
 
