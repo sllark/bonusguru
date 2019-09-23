@@ -423,6 +423,7 @@
         }
 
         &__IconsText{
+          pointer-events: none;
 
           display: flex;
           justify-content: center;
@@ -443,6 +444,8 @@
         &__downIcon{
           height: 1.5rem;
           width: 1rem;
+          pointer-events: none;
+
           img{
 
 
@@ -463,7 +466,6 @@
             position: absolute;
             bottom:-14.2rem;
             left: 0;
-            //border: 1px solid white;
             color: rgba(white,0.95);
             font-weight: lighter;
             font-size: 1.2rem;
