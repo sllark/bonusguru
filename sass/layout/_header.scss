@@ -233,7 +233,7 @@
               background-color: #FFFFFF;
               position: absolute;
               top: -9px;
-              left: -0.5px;
+              left: 0;
               clip-path: polygon(50% 0,100% 100%,0 100%);
             }
 
@@ -448,7 +448,6 @@
 
           img{
 
-
             &:active{
               transform: translateY(3px);
             }
@@ -509,7 +508,7 @@
               background-color: #FFFFFF;
               position: absolute;
               top: -7px;
-              right: 1px;
+              right: 0;
               clip-path: polygon(50% 0,100% 100%,0 100%);
             }
 
