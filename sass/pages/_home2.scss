@@ -822,23 +822,26 @@
       font-size: 1.8rem;
       font-weight: bolder;
 
-
       @media (max-width: 600px) {
         font-size: 1.4rem;
         height: 6.5rem;
-
       }
-
-
       @media (max-width: 400px) {
         font-size: 1rem;
       }
       &:hover{
         background-color: #E92304;
       }
-
-
     }
+  }
+}
 
+
+.linkRed{
+  color: red;
+  font-size: 1.8rem;
+  font-weight: 600;
+  &:hover{
+    text-decoration: underline;
   }
 }

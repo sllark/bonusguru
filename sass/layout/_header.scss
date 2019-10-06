@@ -423,7 +423,7 @@
         }
 
         &__IconsText{
-          pointer-events: none;
+          //pointer-events: none;
 
           display: flex;
           justify-content: center;
@@ -444,7 +444,7 @@
         &__downIcon{
           height: 1.5rem;
           width: 1rem;
-          pointer-events: none;
+          //pointer-events: none;
 
           img{
 

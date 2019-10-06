@@ -794,13 +794,6 @@ strong {
       .sectionSpinList__item button:hover {
         background-color: #E92304; }
 
-.linkRed {
-  color: red;
-  font-size: 1.8rem;
-  font-weight: 600; }
-  .linkRed:hover {
-    text-decoration: underline; }
-
 main {
   padding: 7.5rem 0;
   width: 100%;
@@ -2023,6 +2016,7 @@ img {
             max-width: 38rem;
             height: 8rem; } }
         .header__Content__btns__btnContainer__IconsText {
+          pointer-events: none;
           display: flex;
           justify-content: center;
           align-items: center; }
@@ -2035,7 +2029,8 @@ img {
                 margin-left: 1rem; } }
         .header__Content__btns__btnContainer__downIcon {
           height: 1.5rem;
-          width: 1rem; }
+          width: 1rem;
+          pointer-events: none; }
           .header__Content__btns__btnContainer__downIcon img:active {
             transform: translateY(3px); }
           .header__Content__btns__btnContainer__downIcon img:hover {
